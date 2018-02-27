@@ -1,11 +1,17 @@
 .image-root {
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: center;
+  object-fit: contain;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   position: relative;
   border: 1px solid white;
+
+  .image-background{
+    background-size: 200% auto;
+    background-repeat: no-repeat;
+  }
 
   > div {
     visibility: hidden;
@@ -47,4 +53,3 @@
     }
   }
 }
-
